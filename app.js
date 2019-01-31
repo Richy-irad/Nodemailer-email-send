@@ -22,6 +22,7 @@ app.post('/contact/send', function(req, res){
   transporter = nodeMailer.createTransport({
     host: 'smtp.gmail.com',// the hosting service for your email account
     port: 25,              //smtp runs on port 25 or 465 or 587. 465 is the secure one
+    secure: false,
     auth: {
       user: realemail@gmail.com   //This is your email that you will be using. Should be a real email
       pass: realpassword          //This is the password to the above email. It should also be a working password
